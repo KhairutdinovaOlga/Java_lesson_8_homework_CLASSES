@@ -16,8 +16,8 @@ public static double calculateSalaryForOneMonth(Employee employee, Month month) 
 
     for (int i=0; i< months.length; i++){
         Month current =months[i];
-        double s= calculateSalaryForOneMonth(employee,current);
-        severalSalary+=s ;
+        double monthlysalary= calculateSalaryForOneMonth(employee,current);
+        severalSalary+=monthlysalary ;
     }
     return severalSalary;
    }
