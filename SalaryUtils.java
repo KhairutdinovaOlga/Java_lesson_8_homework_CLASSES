@@ -24,13 +24,12 @@ public static double calculateSalaryForOneMonth(Employee employee, Month month) 
     public static void main(String[] args) {
         Employee empl1 = new Employee("Леся", 35, "female", 145.0);
         Employee empl = new Employee("Иван", 38, "male", 123.0);
-        Month jan = MonthUtils.JAN;
-        Month feb = MonthUtils.FEB;
-        Month mar = MonthUtils.MAR;
+        // Month jan = MonthUtils.JAN;
+        // Month mar = MonthUtils.MAR;
 
         Month[] months= MonthUtils. allMonth;
-        System.out.println(calculateSalaryForOneMonth(empl, jan));
-        System.out.println(calculateSalaryForOneMonth(empl1, mar));
+        System.out.println(calculateSalaryForOneMonth(empl, MonthUtils.JAN));// можно вместо переменной jan подставить сразу значение из класса MonthUtils через .    
+        System.out.println(calculateSalaryForOneMonth(empl1, MonthUtils.MAR));
         System.out.println(calculateSalaryForManyMonths(empl,months));
     }
     }
